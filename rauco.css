@@ -16,9 +16,9 @@ body {background: linear-gradient(45deg, #dfb0b6, #b5d4c2, #ddd3b0, #bcccd6, #c3
     -o-animation: background 10s ease infinite;
     animation: background 10s ease infinite;}
 
-h1{font-size: 40px}
-h2{font-size: 30px}
-p{font-size: 20px}
+h1{font-size: 2em}
+h2{font-size:30px}
+p{font-size: 1.3em}
 
 /* This keeps child nodes hidden while the element loads */
 :not(:defined) > * {
@@ -77,7 +77,7 @@ model-viewer > #ar-prompt {
 
 
     position: relative;
-    height: 12vh;
+    height: 60px;
     bottom: 0;
     z-index: 99;
     background-color: white;
@@ -108,8 +108,8 @@ model-viewer > #ar-prompt {
 .slide {
     scroll-snap-align: start;
     flex-shrink: 0;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -187,7 +187,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-     background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.4);
+  
     
 }
 
@@ -248,6 +249,8 @@ nav {
 }
 
 
+
+
 blockquote {
   max-width: 1000px;
   padding: 1.3em;
@@ -257,21 +260,31 @@ blockquote {
   border: solid 3px #212121;
   border-radius: 1em;
   box-shadow: #212121 5px 5px 0;
+  
     
 }
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); max-width: 1000px;}
+
 
 .quote-text {
   font-style: italic;
+    height: 250px;
+    
 }
 
 .credit {
   float: right;
+    position: relative;
   margin-top: 1.3em;
   font-weight: bold;
-  font-size: 1.2em;
+  
 }
 
 .quote-icon {
   width: 50px;
   margin-bottom: 0.5em;
+}
+
+@media (max-width: 1000px) {
+  .cards { grid-template-columns: repeat(1, 1fr); }
 }
