@@ -80,7 +80,7 @@ model-viewer > #ar-prompt {
     height: 60px;
     bottom: 0;
     z-index: 99;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);;
 
 
 
@@ -121,7 +121,7 @@ model-viewer > #ar-prompt {
 }
 
 .slide.selected {
-    border: 3px solid white;
+    border: 3px solid rgba(255, 255, 255, 0.5);
 }
 
 .slide:focus {
@@ -160,8 +160,8 @@ nav {
 
 
 .logo {
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
     position: fixed;
     margin:20px;
 
@@ -171,7 +171,7 @@ nav {
     background-image: url(img/logo%20rauco.svg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 60%;
         -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
    
@@ -242,37 +242,47 @@ nav {
 
 
 blockquote {
-  max-width: 500px;
+  
   padding: 1.3em;
     margin: 20px;
-  
+  max-width: 500px;
   color: #212121;
   border: solid 3px #212121;
   border-radius: 1em;
-  box-shadow: #212121 5px 5px 0;
+ 
   
     
 }
-.cards { display: grid; grid-template-columns: repeat(2, 1fr); max-width: 1280px; }
 
-.cards p:nth-child(1) { order: 2;}
-.cards img:nth-child(2) { order: 1; }
-.cards img:nth-child(3) { order: 4;}
-.cards p:nth-child(4) { order: 3; }
-.cards p:nth-child(5) { order: 6; }
-.cards img:nth-child(6) { order: 5;}
-blockquote:nth-child(7) { order: 7;}
-blockquote:nth-child(8) { order: 8;}
-blockquote:nth-child(9) { order: 9;}
-blockquote:nth-child(10) { order: 10;}
-.cards img:nth-child(11) { order: 11;}
-.cards p:nth-child(12) { order: 12;}
+.card {display:flex; justify-content: center; width: 100%;background-color:rgba(255, 255, 255, 0.5); padding: 60px}
 
+.card2 {display:flex; justify-content: center; width: 100%;background-color:rgba(255, 255, 255, 0.2); padding:60px }
+
+
+.a , .b , .c , .d , .e{ display: grid; grid-template-columns: repeat(2, 1fr);  column-gap: 100px; padding: 60px }
+
+.a   p:nth-child(1) { order: 2;margin: auto; max-width: 500px; text-align: left; padding: 20px}
+.a   img:nth-child(2) { order: 1; max-width: 300px; width: 100%; margin: auto;  border-radius: 60px; }
+
+.b   p:nth-child(1) { order: 1;margin: auto; max-width: 500px; text-align: left; padding: 20px}
+.b   img:nth-child(2) { order: 2; max-width: 300px; width: 100%; margin: auto;  border-radius: 60px; }
+
+.c   p:nth-child(1) { order: 2;margin: auto; max-width: 500px; text-align: left; padding: 20px}
+.c   img:nth-child(2) { order: 1; max-width: 300px; width: 100%; margin: auto;  border-radius: 60px; background-color: white }
+
+.d blockquote:nth-child(1) { order: 1;   }
+.d blockquote:nth-child(2) { order: 2;  }
+.d blockquote:nth-child(3) { order: 3;   }
+.d blockquote:nth-child(4) { order: 4;   }
+
+.e   p:nth-child(1) { order: 2;margin: auto; max-width: 500px; text-align: left; padding: 20px}
+.e   img:nth-child(2) { order: 1; max-width: 200px; width: 100%; margin: auto; }
 
 
 .quote-text {
   font-style: italic;
-    height: 250px;
+    
+    
     
 }
 
@@ -290,18 +300,22 @@ blockquote:nth-child(10) { order: 10;}
 }
 
 @media (max-width: 1000px) {
-  .cards { grid-template-columns: repeat(1, 1fr); }
-    .cards p:nth-child(1) { order: 2; }
-.cards img:nth-child(2) { order: 1; }
-.cards img:nth-child(3) { order: 3; }
-.cards p:nth-child(4) { order: 4; }
-.cards p:nth-child(5) { order: 6; }
-img:nth-child(6) { order: 5; }
-blockquote:nth-child(7) { order: 7;}
-blockquote:nth-child(8) { order: 8;}
-blockquote:nth-child(9) { order: 9;}
-blockquote:nth-child(10) { order: 10;}
-    .cards img:nth-child(11) { order: 11;}
-.cards p:nth-child(12) { order: 12;}
+  
+.a , .b , .c , .d , .e { display: grid; grid-template-columns: repeat(1, 1fr); grid-gap: 60px; padding: 0px; padding-top: 60px; padding-bottom: 60px }
+    .a   p:nth-child(1) { order: 2;}
+.a   img:nth-child(2) { order: 1 }
+
+.b   p:nth-child(1) { order: 2; }
+.b   img:nth-child(2) { order: 1; }
+
+.c   p:nth-child(1) { order: 2;}
+.c   img:nth-child(2) { order: 1}
+.d   blockquote   { width: ;}
+.e   p:nth-child(1) { order: 2;  }
+.e   img:nth-child(2) { order: 1}
     
-}
+    .card { padding: 0px}
+
+.card2 { padding:0px }
+
+
