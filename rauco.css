@@ -8,17 +8,27 @@ html {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 }
 
-body {background: linear-gradient(45deg, #dfb0b6, #b5d4c2, #ddd3b0, #bcccd6, #c3b6d2, #e3b594);
+body {
+    background: linear-gradient(45deg, #dfb0b6, #b5d4c2, #ddd3b0, #bcccd6, #c3b6d2, #e3b594);
     background-size: 1200% 1200%;
 
     -webkit-animation: background 10s ease infinite;
     -moz-animation: background 10s ease infinite;
     -o-animation: background 10s ease infinite;
-    animation: background 10s ease infinite;}
+    animation: background 10s ease infinite;
+}
 
-h1{font-size: 2em}
-h2{font-size:30px}
-p{font-size: 1.4em}
+h1 {
+    font-size: 2em
+}
+
+h2 {
+    font-size: 30px
+}
+
+p {
+    font-size: 1.4em
+}
 
 /* This keeps child nodes hidden while the element loads */
 :not(:defined) > * {
@@ -80,7 +90,8 @@ model-viewer > #ar-prompt {
     height: 60px;
     bottom: 0;
     z-index: 99;
-    background-color: rgba(255, 255, 255, 0.5);;
+    background-color: rgba(255, 255, 255, 0.5);
+    ;
 
 
 
@@ -163,18 +174,18 @@ nav {
     width: 120px;
     height: 120px;
     position: fixed;
-    margin:20px;
+    margin: 20px;
 
     border-radius: 60px;
-    
-    
+
+
     background-image: url(img/logo%20rauco.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 60%;
-        -webkit-backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
-   
+
 
 
 }
@@ -242,80 +253,204 @@ nav {
 
 
 blockquote {
-  
-  padding: 1.3em;
+
+    padding: 1.3em;
     margin: 20px;
-  max-width: 500px;
-  color: #212121;
-  border: solid 3px #212121;
-  border-radius: 1em;
- 
-  
-    
+    max-width: 500px;
+    text-align: left;
+
+    border-radius: 30px;
+
+
+
 }
 
-.card {display:flex; justify-content: center; width: 100%;background-color:rgba(255, 255, 255, 0.5); padding: 60px}
+.card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 60px
+}
 
-.card2 {display:flex; justify-content: center; width: 100%;background-color:rgba(255, 255, 255, 0.2); padding:60px }
+.card2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 60px
+}
 
 
-.a , .b , .c , .d , .e{ display: grid; grid-template-columns: repeat(2, 1fr);  column-gap: 100px; padding: 60px }
+.a,
+.b,
+.c,
+.d {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
+    padding: 60px
+}
 
-.a   p:nth-child(1) { order: 2;margin: auto; max-width: 500px; text-align: left; padding: 20px}
-.a   img:nth-child(2) { order: 1; max-width: 300px; width: 100%; margin: auto;  border-radius: 60px; }
+.e {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 60px;
+    padding: 0px;
+    padding-top: 60px;
+    padding-bottom: 60px
+}
 
-.b   p:nth-child(1) { order: 1;margin: auto; max-width: 500px; text-align: left; padding: 20px}
-.b   img:nth-child(2) { order: 2; max-width: 300px; width: 100%; margin: auto;  border-radius: 60px; }
+.a p:nth-child(1) {
+    order: 2;
+    margin: auto;
+    max-width: 500px;
+    text-align: left;
+    padding: 20px
+}
 
-.c   p:nth-child(1) { order: 2;margin: auto; max-width: 500px; text-align: left; padding: 20px}
-.c   img:nth-child(2) { order: 1; max-width: 300px; width: 100%; margin: auto;  border-radius: 60px; background-color: white }
+.a img:nth-child(2) {
+    order: 1;
+    max-width: 300px;
+    width: 100%;
+    margin: auto;
+    border-radius: 60px;
+}
 
-.d blockquote:nth-child(1) { order: 1;   }
-.d blockquote:nth-child(2) { order: 2;  }
-.d blockquote:nth-child(3) { order: 3;   }
-.d blockquote:nth-child(4) { order: 4;   }
+.b p:nth-child(1) {
+    order: 1;
+    margin: auto;
+    max-width: 500px;
+    text-align: left;
+    padding: 20px
+}
 
-.e   p:nth-child(1) { order: 2;margin: auto; max-width: 500px; text-align: left; padding: 20px}
-.e   img:nth-child(2) { order: 1; max-width: 200px; width: 100%; margin: auto; }
+.b img:nth-child(2) {
+    order: 2;
+    max-width: 300px;
+    width: 100%;
+    margin: auto;
+    border-radius: 60px;
+}
+
+.c p:nth-child(1) {
+    order: 2;
+    margin: auto;
+    max-width: 500px;
+    text-align: left;
+    padding: 20px
+}
+
+.c img:nth-child(2) {
+    order: 1;
+    max-width: 300px;
+    width: 100%;
+    margin: auto;
+    border-radius: 60px;
+    background-color: white
+}
+
+.d blockquote:nth-child(1) {
+    order: 1;
+}
+
+.d blockquote:nth-child(2) {
+    order: 2;
+}
+
+.d blockquote:nth-child(3) {
+    order: 3;
+}
+
+.d blockquote:nth-child(4) {
+    order: 4;
+}
+
+.e p:nth-child(1) {
+    order: 2;
+    margin: auto;
+    max-width: 1000px;
+    text-align: left;
+    padding: 20px
+}
+
+.e img:nth-child(2) {
+    order: 1;
+    max-width: 200px;
+    width: 100%;
+    margin: auto;
+}
 
 
 .quote-text {
-  font-style: italic;
-    
-    
-    
+    font-style: italic;
+
+
+
 }
 
 .credit {
-  float: right;
+
     position: relative;
-  margin-top: 1.3em;
-  font-weight: bold;
-  
+
+    margin-top: 1.3em;
+    font-weight: bold;
+
 }
 
 .quote-icon {
-  width: 50px;
-  margin-bottom: 0.5em;
+    width: 50px;
+    margin-bottom: 0.5em;
 }
 
 @media (max-width: 1000px) {
-  
-.a , .b , .c , .d , .e { display: grid; grid-template-columns: repeat(1, 1fr); grid-gap: 60px; padding: 0px; padding-top: 60px; padding-bottom: 60px }
-    .a   p:nth-child(1) { order: 2;}
-.a   img:nth-child(2) { order: 1 }
 
-.b   p:nth-child(1) { order: 2; }
-.b   img:nth-child(2) { order: 1; }
+    .a,
+    .b,
+    .c,
+    .d {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 60px;
+        padding: 0px;
+        padding-top: 60px;
+        padding-bottom: 60px
+    }
 
-.c   p:nth-child(1) { order: 2;}
-.c   img:nth-child(2) { order: 1}
-.d   blockquote   { width: ;}
-.e   p:nth-child(1) { order: 2;  }
-.e   img:nth-child(2) { order: 1}
-    
-    .card { padding: 0px}
+    .a p:nth-child(1) {
+        order: 2;
+    }
 
-.card2 { padding:0px }
+    .a img:nth-child(2) {
+        order: 1
+    }
+
+    .b p:nth-child(1) {
+        order: 2;
+    }
+
+    .b img:nth-child(2) {
+        order: 1;
+    }
+
+    .c p:nth-child(1) {
+        order: 2;
+    }
+
+    .c img:nth-child(2) {
+        order: 1
+    }
+
+    .d blockquote {
+        width: ;
+    }
 
 
+
+    .card {
+        padding: 0px
+    }
+
+    .card2 {
+        padding: 0px
+    }
