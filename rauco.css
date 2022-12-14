@@ -18,7 +18,7 @@ body {background: linear-gradient(45deg, #dfb0b6, #b5d4c2, #ddd3b0, #bcccd6, #c3
 
 h1{font-size: 2em}
 h2{font-size:30px}
-p{font-size: 1.3em}
+p{font-size: 1.4em}
 
 /* This keeps child nodes hidden while the element loads */
 :not(:defined) > * {
@@ -31,7 +31,7 @@ model-viewer {
     height: 100%;
     width: 100%;
     z-index: 99;
-    background-color: rgba(255, 255, 255, 0.4);
+
 
 
 
@@ -182,16 +182,6 @@ nav {
 
 
 
-.section {
-   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.4);
-  
-    
-}
-
 @-webkit-keyframes background {
     0% {
         background-position: 88% 0%
@@ -252,7 +242,7 @@ nav {
 
 
 blockquote {
-  max-width: 1000px;
+  max-width: 500px;
   padding: 1.3em;
     margin: 20px;
   
@@ -263,7 +253,21 @@ blockquote {
   
     
 }
-.cards { display: grid; grid-template-columns: repeat(2, 1fr); max-width: 1000px;}
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); max-width: 1280px; }
+
+.cards p:nth-child(1) { order: 2;}
+.cards img:nth-child(2) { order: 1; }
+.cards img:nth-child(3) { order: 4;}
+.cards p:nth-child(4) { order: 3; }
+.cards p:nth-child(5) { order: 6; }
+.cards img:nth-child(6) { order: 5;}
+blockquote:nth-child(7) { order: 7;}
+blockquote:nth-child(8) { order: 8;}
+blockquote:nth-child(9) { order: 9;}
+blockquote:nth-child(10) { order: 10;}
+.cards img:nth-child(11) { order: 11;}
+.cards p:nth-child(12) { order: 12;}
+
 
 
 .quote-text {
@@ -287,4 +291,17 @@ blockquote {
 
 @media (max-width: 1000px) {
   .cards { grid-template-columns: repeat(1, 1fr); }
+    .cards p:nth-child(1) { order: 2; }
+.cards img:nth-child(2) { order: 1; }
+.cards img:nth-child(3) { order: 3; }
+.cards p:nth-child(4) { order: 4; }
+.cards p:nth-child(5) { order: 6; }
+img:nth-child(6) { order: 5; }
+blockquote:nth-child(7) { order: 7;}
+blockquote:nth-child(8) { order: 8;}
+blockquote:nth-child(9) { order: 9;}
+blockquote:nth-child(10) { order: 10;}
+    .cards img:nth-child(11) { order: 11;}
+.cards p:nth-child(12) { order: 12;}
+    
 }
