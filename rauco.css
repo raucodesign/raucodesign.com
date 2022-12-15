@@ -442,12 +442,10 @@ blockquote {
         order: 1
     }
 
-    .d blockquote {
-        width: ;
-    }
+    
 
 h1 {
-    font-size: 1.3em
+    font-size: 1.4em
 }
 
 h2 {
@@ -455,7 +453,7 @@ h2 {
 }
 
 p {
-    font-size: 1em
+    font-size: 1.2em
 }
 
     .card {
