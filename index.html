@@ -32,7 +32,7 @@
     <div style="text-align: center; width: 100%;background-color: rgba(255, 255, 255, 0.4);">
 
         <div style="height: 60vh;">
-            <model-viewer alt="rauco pik cute midi bluetooth controller" poster="img/poster.webp" src="img/rosa.glb" shadow-intensity="1" auto-rotate ar camera-controls touch-action="pan-y" disable-zoom camera-orbit="45deg 45deg 2m">
+            <model-viewer id="first" alt="rauco pik cute midi bluetooth controller" poster="img/poster.webp" src="img/rosa.glb" shadow-intensity="1" auto-rotate ar camera-controls touch-action="pan-y" disable-zoom camera-orbit="45deg 45deg 2m">
 
 
                 <button slot="ar-button" id="ar-button">
@@ -213,7 +213,33 @@
 
 
 
+ <script type="module">
+    const body = document.body;
 
+    const onInteraction = () => {document.querySelector('#first').dismissPoster();};
+
+    body.addEventListener('mouseover', onInteraction, {once:true});
+    body.addEventListener('touchmove', onInteraction, {once:true});
+    body.addEventListener('scroll', onInteraction, {once:true});
+    body.addEventListener('keydown', onInteraction, {once:true});
+
+    const onProgress = (event) => {
+      const progressBar = event.target.querySelector('.progress-bar');
+      const updatingBar = event.target.querySelector('.update-bar');
+      updatingBar.style.width = `${event.detail.totalProgress*100}%`;
+      if (event.detail.totalProgress === 1) {
+        progressBar.classList.add('hide');
+      } else {
+        progressBar.classList.remove('hide');
+        if (event.detail.totalProgress === 0) {
+          event.target.querySelector('.center-pre-prompt')?.classList.add('hide');
+        }
+      }
+    };
+
+    document.querySelector('#first').addEventListener('progress', onProgress);
+    document.querySelector('#second').addEventListener('progress', onProgress);
+  </script>
 
 
 
