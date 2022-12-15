@@ -35,6 +35,8 @@ p {
     display: none;
 }
 
+.content {height: calc(100vh - 60px);}
+
 model-viewer {
 
     overflow-x: hidden;
@@ -405,7 +407,7 @@ blockquote {
 }
 
 @media (max-width: 1000px) {
-
+.content {height: calc(100vh - 120px);}
     .a,
     .b,
     .c,
