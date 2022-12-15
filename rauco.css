@@ -417,6 +417,24 @@ blockquote {
         padding-top: 60px;
         padding-bottom: 60px
     }
+    
+    .a img:nth-child(2){
+        max-width: 200px;
+    }
+    
+       .b img:nth-child(2){
+        max-width: 200px;
+    }
+    
+       .c img:nth-child(2){
+        max-width: 200px;
+    }
+    
+     .e img:nth-child(2) {
+ 
+    max-width: 150px;
+   
+}
 
     .a p:nth-child(1) {
         order: 2;
