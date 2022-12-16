@@ -59,9 +59,9 @@ model-viewer {
     margin: auto;
   left: 0;
   right: 0;
-  text-align: center;
+  text-align: right;
    
-    bottom: 15px;
+    bottom: 0px;
   
     font-family: Roboto Regular, Helvetica Neue, sans-serif;
     font-size: 14px;
