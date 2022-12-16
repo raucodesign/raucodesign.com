@@ -61,8 +61,7 @@ model-viewer {
   right: 0;
   text-align: center;
    
-    bottom: 0px;
-    padding-bottom: 30px;
+    bottom: 15px;
   
     font-family: Roboto Regular, Helvetica Neue, sans-serif;
     font-size: 14px;
