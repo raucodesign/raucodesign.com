@@ -156,15 +156,7 @@ model-viewer > #ar-prompt {
 
 
 
-nav {
-    background-color: transparent;
-    z-index: 100;
-    position: fixed;
-    top: 0;
-    height: 90px;
-    width: 100%;
-    min-width: 280px;
-}
+
 
 
 
