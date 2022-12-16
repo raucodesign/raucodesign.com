@@ -68,8 +68,8 @@ model-viewer {
     color: black;
     height: 36px;
     line-height: 36px;
-    border-radius: 100%;
-   
+    border-radius: 18px;
+    width: 50vw;max-width: 400px;
   
 
 }
