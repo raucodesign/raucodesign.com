@@ -55,10 +55,11 @@ model-viewer {
     background-size: 30px 30px;
     background-position: center;
     background-color: transparent;
-    position:fixed;
+    position:absolute;
     top:0;
     right: 0;
     margin: 20px;
+    z-index: 1000000;
     
    
 
