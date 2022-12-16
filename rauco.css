@@ -56,26 +56,27 @@ model-viewer {
     background-position: center;
     background-color: transparent;
     position: absolute;
-    margin: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-   
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
     bottom: 15px;
-  
+    padding: 0px 16px 0px 40px;
     font-family: Roboto Regular, Helvetica Neue, sans-serif;
     font-size: 14px;
     color: black;
     height: 36px;
     line-height: 36px;
     border-radius: 18px;
-    width: 50vw;max-width: 400px;
+    width: 50vw;max-width: 400px
   
 
 }
 
 model-viewer > #ar-prompt {
-    
+    position: absolute;
+    left: 50%;
+    bottom: 175px;
+    animation: elongate 2s infinite ease-in-out alternate;
     display: none;
 }
 
