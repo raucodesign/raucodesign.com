@@ -5,7 +5,7 @@
 }
 
 html {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol; height: 100vh;
 }
 
 body {
@@ -35,13 +35,13 @@ p {
     display: none;
 }
 
-.content {height: calc(100vh - 60px);}
+
 
 model-viewer {
 
     overflow-x: hidden;
     overflow-y: hidden;
-    height: 90vh;
+    height: 95vh;
     width: 100%;
     z-index: 99;
 
@@ -92,10 +92,10 @@ model-viewer > #ar-prompt {
 
 
     position: relative;
-    height: 60px;
+    height:5vh;
     bottom: 0;
-    z-index: 99;
-    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 100;
+  
     
 
 
@@ -112,6 +112,7 @@ model-viewer > #ar-prompt {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    
 
 
 
@@ -126,14 +127,14 @@ model-viewer > #ar-prompt {
     flex-shrink: 0;
     width: 30px;
     height: 30px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #fff;
-    margin-right: 10px;
+    
+    margin-right: 20px;
+    margin-bottom: 20px;
     border-radius: 100%;
     border: none;
     display: flex;
+    
+    
 }
 
 .slide.selected {
@@ -402,7 +403,7 @@ blockquote {
 }
 
 @media (max-width: 1000px) {
-.content {height: calc(100vh - 120px);}
+
     .a,
     .b,
     .c,
