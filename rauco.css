@@ -35,13 +35,11 @@ p {
     display: none;
 }
 
-.content {height: 100vh;
-           }
 
 model-viewer {
 
     overflow-x: hidden;
-    height: 100%;
+    height: calc(100vh - 60px);
     width: 100%;
     z-index: 99;
 
