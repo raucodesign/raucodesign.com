@@ -50,14 +50,12 @@
   margin: auto;
   left: 0;
   right: 0;
-  text-align: center; bottom: 200px">
+  text-align: center;margin-top:calc(100vh - 275px)">
             <model-viewer src="img/rosa.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls poster="img/poster.webp" shadow-intensity="2" exposure="1" camera-orbit="-180deg 157.1deg 0.6908m" field-of-view="30deg" disable-zoom touch-action="pan-y">
                 <div class="progress-bar hide" slot="progress-bar">
                     <div class="update-bar"></div>
                 </div>
-                <button slot="ar-button" id="ar-button">
-
-                </button>
+                
                 <div id="ar-prompt">
 
                 </div>
@@ -66,7 +64,9 @@
         </div>
 
         <div class="slider">
+            
             <div class="slides" style="justify-content: center">
+                
                 <button class="slide selected" onclick="switchSrc(this, 'rosa')" style="background-color: #DFB0B6">
 
                 </button><button class="slide" onclick="switchSrc(this, 'verde')" style="background-color: #B5D4C2">
