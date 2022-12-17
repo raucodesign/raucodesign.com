@@ -53,19 +53,18 @@ model-viewer {
 #ar-button {
     background-image: url(img/logo-apple-ar-svgrepo-com.svg);
     background-repeat: no-repeat;
-    background-size: 20px 20px;
+    background-size: 30px;
     background-position: center;
     background-color: transparent;
     position: absolute;
     right: 20px;
     white-space: nowrap;
-    top: 30px;
-    padding: 0px 16px 0px 40px;
+    top: 20px;
+    padding: 2px;
     font-family: Roboto Regular, Helvetica Neue, sans-serif;
     font-size: 14px;
     color: black;
-    height: 36px;
-    width: 36px;
+    height: 40px;width: 40px;
     line-height: 36px;
     border-radius: 100%;
     z-index: 101;
