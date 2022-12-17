@@ -59,14 +59,14 @@ model-viewer {
     position: absolute;
     right: 20px;
     white-space: nowrap;
-    top: 40px;
+    top: 30px;
     padding: 0px 16px 0px 40px;
     font-family: Roboto Regular, Helvetica Neue, sans-serif;
     font-size: 14px;
     color: black;
     height: 36px;
     line-height: 36px;
-    border-radius: 18px;
+    border-radius: 100%;
     z-index: 101;
   
   
