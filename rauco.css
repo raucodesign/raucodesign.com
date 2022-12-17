@@ -177,7 +177,7 @@ model-viewer > #ar-prompt {
     border-radius: 60px;
 
 
-    background-image: url(img/logo%20rauco.svg);
+    background-image: url(img/logo%20bold.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 60%;
@@ -374,7 +374,7 @@ blockquote {
 
 .e img:nth-child(2) {
     order: 1;
-    max-width: 200px;
+    max-width: 150px;
     width: 100%;
     margin: auto;
 }
