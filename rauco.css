@@ -170,15 +170,15 @@ model-viewer > #ar-prompt {
 
 .logo {
     width: 90px;
-    height: 150px;
+    height: 90px;
     position: fixed;
    
-
+border-radius: 100%;
   
 
 
     background-image: url(img/logo%20bold.svg);
-    background-position: 20px 15px;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: 60%;
     -webkit-backdrop-filter: blur(8px);
@@ -189,7 +189,28 @@ model-viewer > #ar-prompt {
 
 }
 
+.logo2 {
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    
+    top:90px;
+   
+border-radius: 100%;
+  
 
+
+    background-image: url(img/instragram.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    z-index: 200;
+
+
+
+}
 
 
 @-webkit-keyframes background {
