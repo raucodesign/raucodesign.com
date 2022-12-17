@@ -190,11 +190,12 @@ border-radius: 100%;
 }
 
 .logo2 {
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
     position: fixed;
     
-    top:90px;
+    top:100px;
+    margin-left: 10px;
    
 border-radius: 100%;
   
